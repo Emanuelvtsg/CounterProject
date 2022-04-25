@@ -1,0 +1,64 @@
+module Contador(Key0, Key1, Key2, Key3, DisplaY);
+
+input Key0, Key1, Key2, Key3;
+output reg[14:0] DisplaY;
+
+parameter[2:0] Default = 3'd0, Esp_solt = 3'd1, Conta = 3'd2, Pausa = 3'd3, Para = 3'd4, Zera_cont_bgnd = 3'd5, Zera_bgnd = 3'd6, Esp_despaus = 3'd7; 
+
+reg[13:0] Cont,Bgnd;
+reg Estado_ant, Estado;
+
+always@(negedge Key0, negedge Key1, negedge Key2, negedge Key3) begin
+	if()begin
+	
+	
+	
+	end
+end
+
+always@(*) begin
+	case(Estado)
+		Default: begin
+			Cont = 14'd0
+			Bgnd = 14'd0
+			Display = 14'd0
+		
+		end
+		
+		Esp_solt: begin
+		
+		
+		end
+		
+		Conta: begin
+		
+		
+		end
+		
+		Pausa: begin
+		
+		
+		end
+		
+		Para: begin
+		
+		
+		end
+		
+		Zera_cont_bgnd: begin
+		
+		
+		end
+		
+		Zera_bgnd: begin
+		
+		
+		end
+		
+		Esp_despaus: begin
+		
+		
+		end
+	endcase
+end
+endmodule
